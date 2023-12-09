@@ -1,0 +1,9 @@
+name: ContinuousIntegration
+on: [push, workflow_dispatch]
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "Hello World!!"
