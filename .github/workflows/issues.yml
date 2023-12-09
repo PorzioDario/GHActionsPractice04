@@ -1,0 +1,9 @@
+name: Issues
+on: issues
+jobs:
+  issue:
+    name: Issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue
+        run: echo "${{ toJSON(github) }}"
